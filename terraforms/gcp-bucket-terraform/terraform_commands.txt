@@ -1,0 +1,11 @@
+# Initialize Terraform
+terraform init
+
+# Preview changes
+terraform plan -var="project_id=de-project-473910" -var="region=asia-south2"
+
+# Apply changes
+terraform apply -var="project_id=de-project-473910" -var="region=asia-south2" -auto-approve
+
+# Delete All Resources Created by Terraform
+terraform destroy -var="project_id=de-project-473910" -var="region=asia-south2" -auto-approve
