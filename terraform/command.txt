@@ -1,0 +1,15 @@
+# 1️⃣ Navigate to your environment
+cd terraform/environments/dev
+
+# 2️⃣ Initialize Terraform (downloads providers + sets backend)
+terraform init
+
+# 3️⃣ Review what will be created
+terraform plan
+
+# 4️⃣ Apply the changes (provision IAM, VPC, Storage, Composer, etc.)
+terraform apply
+terraform apply -auto-approve
+
+# To destroy all resources in dev:
+terraform destroy
